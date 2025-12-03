@@ -1,0 +1,181 @@
+:root {
+  --lri-orange: #e46a1f;
+  --lri-black: #111111;
+  --lri-light: #ffffff;
+  --max-width: 1080px;
+  --body-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  color: var(--lri-black);
+  background-color: var(--lri-light);
+  line-height: 1.6;
+}
+
+/* Header */
+
+.site-header {
+  border-bottom: 3px solid var(--lri-orange);
+  background-color: var(--lri-light);
+  padding: 1.25rem 1rem 0.5rem;
+}
+
+.site-header .brand {
+  max-width: var(--max-width);
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+}
+
+.site-header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.tagline {
+  margin: 0.15rem 0 0;
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+/* Navigation */
+
+.top-nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.5rem 0 0.75rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  color: var(--lri-black);
+  border: 1px solid transparent;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+  border-color: var(--lri-orange);
+}
+
+/* Layout */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.75rem 1rem 2.5rem;
+}
+
+/* Hero */
+
+.hero {
+  background-color: #fdf4ec;
+  border: 1px solid #f1d1b3;
+  border-radius: 18px;
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  background-color: var(--lri-orange);
+  color: var(--lri-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  opacity: 0.9;
+}
+
+/* Sections */
+
+.section {
+  margin-bottom: 2.25rem;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  margin-top: 0.5rem;
+}
+
+/* Cards */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid #dddddd;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.card h4 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
+
+.card a {
+  color: var(--lri-orange);
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter callout */
+
+.callout {
+  border-left: 4px solid var(--lri-orange);
+  padding-left: 0.75rem;
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 0.75rem 1rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777777;
+  background-color: #fafafa;
+}
